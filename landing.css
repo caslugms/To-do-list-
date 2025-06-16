@@ -1,0 +1,33 @@
+/* Estilos personalizados para a to-do list */
+body {
+    padding: 20px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.task-item {
+    transition: all 0.3s ease;
+}
+
+.task-item:hover {
+    background-color: #f8f9fa;
+}
+
+.delete-btn {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.task-item:hover .delete-btn {
+    opacity: 1;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 576px) {
+    .delete-btn {
+        opacity: 1;
+    }
+}
